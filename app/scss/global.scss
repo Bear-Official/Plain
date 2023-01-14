@@ -1,0 +1,34 @@
+// Settings
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "media";
+@import "keyframes";
+
+// Components
+@import "header";
+@import "footer";
+
+// Pages
+@import "index";
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    height: 100%;
+    background-color: #0c0f16;
+}
+
+.wrapper {
+    max-width: 1147px; 
+    padding: 0 8px;
+    margin: 0 auto; 
+}
+
+.global {
+    background-image: url(../images/bg-elements.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}

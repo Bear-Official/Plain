@@ -1,0 +1,56 @@
+.footer {
+    padding-top: 79px;
+    padding-bottom: 81px;
+    background: #ffffff;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 27px;
+        font-size: 30px;
+    }
+
+    &__text {
+        display: block;
+        color: #5e7182;
+        margin-bottom: 11px;
+    }
+
+    &__item {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    &__link {
+        color: #262e35;
+        transition: all 0.4s;
+
+        &:hover {
+            color: #ffa27a;
+        }
+    }
+
+    &__mail {
+        display: block;
+        margin-bottom: 12px;
+        color: #272e35;
+        transition: all 0.4s;
+
+        &:hover {
+            color: #ffa27a;
+        }
+    }
+
+    &__description {
+        color: #5e7182;
+        margin-bottom: 10px;
+    }
+
+    &__rule {
+        color: #5e7182;
+    }
+}

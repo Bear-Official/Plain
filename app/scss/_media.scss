@@ -1,0 +1,453 @@
+@media (max-width: 1264px) {
+    .chat .chat {
+        &__box {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &__left,
+        &__center,
+        &__right {
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+
+        &__tab,
+        &__add-btn,
+        &__btn {
+            width: 100%;
+        }
+
+        &__bottom-content {
+            padding-top: 0;
+        }
+
+        &__text {
+            &::before {
+                display: none;
+            }
+        }
+
+        &__desc {
+            white-space: normal;
+            font-size: 15px;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .snooze__button,
+            .help__button {
+                width: 100%;
+                margin-right: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .chat {
+        max-width: 100% !important;
+    }
+
+    .item {
+        &__limit {
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+
+        &__usage-block {
+            width: 100% !important;
+        }
+
+        &__usage-container {
+            max-width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards .cards {
+        &__box {
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 20px;
+        }
+    }
+
+    .code {
+        position: static !important;
+        width: 100% !important;
+        height: 100% !important;
+
+        &:nth-child(1) {
+            min-width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+    .card {
+        width: 100% !important;
+
+        &__block {
+            max-width: 100% !important;
+            min-width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .teams .teams {
+        &__inner {
+            max-width: 40%;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        &__container,
+        &__inner {
+            max-width: 80%;
+        }
+    }
+
+    .block {
+        max-width: 100% !important;
+
+        &__box {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    .graph .graph {
+        &__box {
+            flex-direction: column;
+        }
+
+        &__img {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__title {
+            font-size: 45px;
+        }
+
+        &__content {
+            text-align: center;
+        }
+    }
+
+    .main .main {
+        &__left-item {
+            display: none;
+        }
+
+        &__title,
+        &__title-bottom {
+            font-size: 75px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main .main {
+        &__title,
+        &__title-bottom {
+            font-size: 50px;
+        }
+
+        &__title {
+            margin-bottom: 3px;
+        }
+
+        &__wrapper {
+            padding: 0 15px;
+            padding-bottom: 30px;
+        }
+
+        &__description {
+            padding-top: 25px;
+        }
+    }
+
+    .footer .footer {
+        &__inner {
+            flex-wrap: wrap;
+            width: 88%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation__checkbox {
+        display: none;
+    }
+
+    .navigation__button {
+        position: absolute;
+        top: 17px;
+        right: 15px;
+        z-index: 300;
+        cursor: pointer;
+    }
+
+    .navigation__background {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 100;
+        transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        opacity: 0;
+        width: 0;
+        visibility: hidden;
+        z-index: 200;
+        background-color: black;
+        transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .navigation__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        list-style: none;
+    }
+
+    .navigation__item {
+        margin: 1rem;
+    }
+
+    .navigation__link:link,
+    .navigation__link:visited {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        color: #f4f4f4;
+        font-size: 2.4rem;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .navigation__checkbox:checked ~ .navigation__background {
+        transform: scale(80);
+    }
+
+    .navigation__checkbox:checked ~ .header__nav {
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation__icon {
+        position: relative;
+    }
+
+    .navigation__icon,
+    .navigation__icon::before,
+    .navigation__icon::after {
+        display: inline-block;
+        width: 2.2rem;
+        height: 2px;
+        background-color: white;
+    }
+
+    .navigation__icon::before,
+    .navigation__icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 200ms;
+    }
+
+    .navigation__icon::before {
+        top: -0.8rem;
+    }
+
+    .navigation__icon::after {
+        top: 0.8rem;
+    }
+
+    .navigation__button:hover .navigation__icon::before {
+        top: -1rem;
+    }
+
+    .navigation__button:hover .navigation__icon::after {
+        top: 1rem;
+    }
+
+    .navigation__checkbox:checked + .navigation__button .navigation__icon {
+        background-color: transparent;
+    }
+
+    .navigation__checkbox:checked
+        + .navigation__button
+        .navigation__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    .navigation__checkbox:checked
+        + .navigation__button
+        .navigation__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    .header .header {
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            font-size: 30px;
+            padding: 0;
+        }
+    }
+
+    .conversation .conversation {
+        &__title {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .main .main {
+        &__inner {
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            gap: 40px;
+        }
+
+        &__notice,
+        &__description {
+            font-size: 16px;
+            overflow: hidden;
+        }
+    }
+
+    .teams .teams {
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__inner {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        &__container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    .cards .cards {
+        &__title {
+            font-size: 50px;
+        }
+    }
+
+    .block {
+        &__snippets {
+            flex-direction: column !important;
+            min-width: 100% !important;
+            height: 100% !important;
+            text-align: center !important;
+
+            &-right {
+                border-left: none !important;
+                padding-top: 0 !important;
+            }
+
+            &-description {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main .main {
+        &__inner {
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            flex-direction: column;
+            gap: 41px;
+        }
+
+        &__title,
+        &__title-bottom {
+            font-size: 35px;
+        }
+
+        &__notice,
+        &__connect {
+            font-size: 9px;
+        }
+    }
+
+    .conversation .conversation {
+        &__title {
+            font-size: 35px;
+        }
+    }
+
+    .block {
+        &__box {
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+
+        &__container {
+            width: 100% !important;
+        }
+    }
+
+    .footer .footer {
+        &__inner {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__documentation {
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            font-size: 15px;
+        }
+    }
+
+    .help__button::after,
+    .snooze__button::after {
+        display: none !important;
+    }
+}

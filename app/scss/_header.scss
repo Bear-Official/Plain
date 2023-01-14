@@ -1,0 +1,47 @@
+.header {
+    padding-top: 19px;
+    padding-bottom: 112px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        padding-right: 23px;
+        font-size: 16px;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: #ffa27a;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        width: 81px;
+        height: 36px;
+        background: #ffffff;
+        border-radius: 4px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: #ffa27a;
+            color: white;
+        }
+    }
+}
+
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+}

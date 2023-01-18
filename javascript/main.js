@@ -129,4 +129,15 @@ function charToSpan(
 }
 
 charToSpan(title, "10px", "drop", 1, 0);
-charToSpan(description, "5px", "dropDown", 1, 1);
+charToSpan(description, "5px", "dropDown", 1, 1); 
+ 
+
+let body = document.getElementsByClassName("body")[0];
+let button = document.getElementsByClassName("navigation__checkbox")[0];
+button.onclick = (event) => {
+    if (button.checked == true) {
+        body.style = "overflow: hidden;";
+    } else if (button.checked == false) {
+        body.style = "overflow: scroll;";
+    }
+};
